@@ -1,0 +1,129 @@
+.img-logo {
+  width: 82px;
+  margin: 24px auto;
+  display: block;
+}
+
+@media only screen and (max-width: 576px) {
+  .login-container {
+    padding: 50px 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .login-container {
+    padding: 50px 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .login-container {
+    padding: 50px 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .login-container {
+    padding: 50px 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .login-container {
+    padding: 50px 460px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0059de;
+}
+
+.book-img {
+  width: 160px;
+  height: 256px;
+  margin: 10px auto;
+  display: block;
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+body .animbg div {
+  z-index: -1;
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #e5e5e5;
+  color: transparent;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 10s ease-in forwards infinite;
+}
+undefined .animbg div:nth-child(0) {
+  animation-delay: 0s;
+  left: 13vw;
+  top: 95vh;
+}
+
+.animbg div:nth-child(1) {
+  animation-delay: 2s;
+  left: 80vw;
+  top: 63vh;
+  border-color: #ffffff;
+}
+
+.animbg div:nth-child(2) {
+  animation-delay: 4s;
+  left: 37vw;
+  top: 58vh;
+}
+
+.animbg div:nth-child(3) {
+  animation-delay: 6s;
+  left: 50vw;
+  top: 27vh;
+}
+
+.animbg div:nth-child(4) {
+  animation-delay: 8s;
+  left: 75vw;
+  top: 5vh;
+}
+
+.animbg div:nth-child(5) {
+  animation-delay: 10s;
+  left: 62vw;
+  top: 23vh;
+}
+
+.animbg div:nth-child(6) {
+  animation-delay: 12s;
+  left: 27vw;
+  top: 56vh;
+}
